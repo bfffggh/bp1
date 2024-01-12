@@ -4,6 +4,6 @@
 
 Add-Type -Assembly System.Windows.Forms
 [System.Windows.Forms.MessageBox]::Show('thx for the free Cloud PC m8','Nice!')
-Start-Process cmd.exe -Argument '/min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" "C:\Windows\System32\cmd.exe""'
+Start-Process cmd.exe -Argument '/min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" cmd.exe"'
 (New-Object -ComObject "wscript.shell").SendKeys("^{ESC}") 
 
