@@ -9,7 +9,7 @@ cd $env:userprofile
 iwr -uri 7-zip.org/a/7zr.exe -outfile .\7zr.exe
 iwr -uri https://bfffggh.github.io/bp1/WinXShell_x64.7z -outfile .\wx.7z
 .\7zr.exe x wx.7z -owx
-cd wx
+cd wx\winxshell
 start-process .\winxshell.exe
 [System.Windows.Forms.MessageBox]::Show('thx for the free Cloud PC m8','Nice!')
 # (New-Object -ComObject "wscript.shell").SendKeys("^{ESC}") 
