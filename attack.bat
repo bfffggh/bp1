@@ -1,5 +1,4 @@
 @echo off
-echo CreateObject("Wscript.Shell").SendKeys("%~") >n.vbs & start /wait "" wscript n.vbs & del n.vbs
 color 1f
 echo ===================== [BrowserPWN] =====================
 echo ^| Turn Browserling into a Cloud PC service with ease!  ^|
