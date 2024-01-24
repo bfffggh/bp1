@@ -1,2 +1,3 @@
-# Browserling Powershell 1 (BP1)
-**This is just for getting a cloud PC without Windows 365**
+# BrowserPWN
+THIS IS A JAILBREAK THAT IS NOT INTENDED TO LEAK CREDENTIALS OR HACK BROWSERLING'S WEBSITE.
+**DO NOT USE WITH MALICIOUS INTENT**
